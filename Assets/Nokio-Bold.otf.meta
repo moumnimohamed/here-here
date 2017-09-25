@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d945131503ef1ec40bc178edb1d1fc79
+timeCreated: 1506243190
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 200
+  forceTextureCase: -1
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Nokio
+  fontNames:
+  - Nokio
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 1
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
