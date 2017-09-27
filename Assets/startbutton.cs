@@ -12,7 +12,12 @@ public class startbutton : MonoBehaviour {
 	void Update()
 	{
 		if(CnInputManager.GetButtonDown("Jump")){
-			 SceneManager.LoadScene(1);
+			star_scene();
 		}
+	}
+
+	public void   star_scene(){
+			 SceneManager.LoadScene(1);
+		
 	}
 }
