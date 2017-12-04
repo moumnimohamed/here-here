@@ -20,8 +20,8 @@ using UnityEngine;
 
 namespace GoogleMobileAds.Common
 {
-    internal class DummyClient : IBannerClient, IInterstitialClient, IRewardBasedVideoAdClient,
-            IAdLoaderClient, INativeExpressAdClient
+    public class DummyClient : IBannerClient, IInterstitialClient, IRewardBasedVideoAdClient,
+            IAdLoaderClient, INativeExpressAdClient, IMobileAdsClient
     {
         public DummyClient()
         {
@@ -61,6 +61,21 @@ namespace GoogleMobileAds.Common
             {
                 Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
             }
+        }
+
+        public void Initialize(string appId)
+        {
+            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+        }
+
+        public void SetApplicationMuted(bool muted)
+        {
+            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+        }
+
+        public void SetApplicationVolume(float volume)
+        {
+            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
         }
 
         public void CreateBannerView(string adUnitId, AdSize adSize, AdPosition position)
@@ -178,5 +193,12 @@ namespace GoogleMobileAds.Common
         {
             Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
         }
+
+        public string MediationAdapterClassName()
+        {
+            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+            return null;
+        }
+
     }
 }
