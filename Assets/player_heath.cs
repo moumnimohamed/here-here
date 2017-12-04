@@ -26,7 +26,8 @@ public GameObject effect_pos;
 		if(other.tag == this.gameObject.tag){
 			return;
 		}else{
-			Instantiate(dead_effect,effect_pos.transform.position,Quaternion.identity);	
+			Instantiate(dead_effect,effect_pos.transform.position,Quaternion.identity);
+			FindObjectOfType<adsManager>().ads_timer-=1;				
 		Destroy(this.gameObject);
 		}
 	}
